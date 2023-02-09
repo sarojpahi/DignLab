@@ -1,0 +1,107 @@
+.App {
+  /* background: #000; */
+  color: white;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px;
+}
+
+.menu {
+  display: flex;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: white;
+  gap: 20px;
+}
+.menu div {
+  cursor: pointer;
+}
+.menuImg {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menuImg img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+.scrollbe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 50px;
+  left: 20px;
+  color: white;
+  width: max-content;
+  gap: 20px;
+}
+.scrollbe div:first-child {
+  width: 50px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.scrollbe div:last-child {
+  width: 150px;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer > div {
+  width: 200px;
+}
+.footerBlank {
+  content: "";
+  width: 3px;
+  height: 12px;
+  background-color: white;
+}
+.footerName {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.footerName div:first-child {
+  width: 35px;
+  height: 12px;
+  background-color: white;
+  animation: load 0.8s linear;
+}
+.footerName div:last-child {
+  text-transform: uppercase;
+  font-family: race2;
+  font-size: 10px;
+}
+@keyframes load {
+  from {
+    width: 3px;
+  }
+  to {
+    width: 35px;
+  }
+}
